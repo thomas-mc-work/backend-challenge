@@ -25,8 +25,8 @@ Client side:
 
 Use these commands in an empty folder:
 
-    # download the project
-    curl "https://codeberg.org/thomas-mc-work/backend-challenge" | tar xf
+    # download and extract the project in the current folder
+    curl -sLo - "https://codeberg.org/thomas-mc-work/backend-challenge/archive/main.tar.gz" | tar zxf - --strip 1
 
     # compile and run in dev mode for local usage
     ./mvnw compile quarkus:dev
